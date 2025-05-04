@@ -1,0 +1,20 @@
+# 训练与评估参数配置
+train:
+  episodes: 500
+  max_steps: 200
+  batch_size: 64
+  gamma: 0.99
+  lr: 0.001
+  epsilon_start: 1.0
+  epsilon_min: 0.05
+  epsilon_decay: 0.995
+  memory_size: 10000
+  target_update: 100
+
+eval:
+  episodes: 20
+  max_steps: 200
+
+env:
+  state_dim: 3
+  action_dim: 3 
